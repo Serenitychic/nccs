@@ -3,6 +3,7 @@ SIDEBAR
 - header {String}
 - date {Date}
 - primaryCtaUrl {String (url)}
+- primaryCtaText {String}
 - primaryCtaCaption {String}
 - links {Object}
   - header {String}
@@ -35,7 +36,7 @@ SIDEBAR
 
   {% if include.primaryCtaUrl %}
     {% include components/button.html
-      text = "Download Data"
+      text = include.primaryCtaText
       href = include.primaryCtaUrl
       style = "primary"
       icon = "download"
