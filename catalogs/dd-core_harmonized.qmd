@@ -1,0 +1,115 @@
+---
+title: "NCCS Core Data Dictionaries"
+format: html
+editor: visual
+execute: 
+  echo: false
+  warning: false
+---
+
+```{r echo=FALSE}
+library(dplyr)
+library(kableExtra)
+
+dd <- readr::read_csv("https://raw.githubusercontent.com/UrbanInstitute/nccstools/main/crosswalks/ds-core/CORE-HRMN-DD.csv?token=GHSAT0AAAAAACGVREUYCQKYWSFWBNTA72GIZN5LSPQ")
+```
+
+## Variables A
+
+
+## 501C3-CHARITIES-PZ Data Dictionary
+
+```{r}
+
+dd %>%
+  dplyr::filter( form_scope == "501C3-CHARITIES-PZ" ) %>% 
+  dplyr::select(  
+    variable_name,
+    variable_description,
+    variable_source,
+    form_location,
+    variable_coverage,
+    variable_datatype
+    ) %>% 
+  knitr::kable( escape=FALSE,
+                col.names = c("Variable Name", 
+                              "Description",
+                              "Variable Source",
+                              "Location Code",
+                              "Coverage",
+                              "Data Type") ) %>%
+  kableExtra::kable_styling( full_width = FALSE ) %>% 
+  column_spec( column = c( 2, 4 ), width_min = "10cm" )
+```
+
+## 501C3-CHARITIES-PC Data Dictionary
+
+```{r}
+dd %>%
+  dplyr::filter( form_scope == "501C3-CHARITIES-PC" ) %>% 
+  dplyr::select(  
+    variable_name,
+    variable_description,
+    variable_source,
+    form_location,
+    variable_coverage,
+    variable_datatype
+    ) %>% 
+  knitr::kable( escape=FALSE,
+                col.names = c("Variable Name", 
+                              "Description",
+                              "Variable Source",
+                              "Location Code",
+                              "Coverage",
+                              "Data Type") ) %>%
+  kableExtra::kable_styling( full_width = FALSE ) %>% 
+  column_spec( column = c( 2, 4 ), width_min = "10cm" )
+```
+
+## 501CE-NONPROFIT-PZ Data Dictionary
+
+```{r}
+dd %>%
+  dplyr::filter( form_scope == "501CE-NONPROFIT-PZ" ) %>% 
+  dplyr::select(  
+    variable_name,
+    variable_description,
+    variable_source,
+    form_location,
+    variable_coverage,
+    variable_datatype
+    ) %>% 
+  knitr::kable( escape=FALSE,
+                col.names = c("Variable Name", 
+                              "Description",
+                              "Variable Source",
+                              "Location Code",
+                              "Coverage",
+                              "Data Type") ) %>%
+  kableExtra::kable_styling( full_width = FALSE ) %>% 
+  column_spec( column = c( 2, 4 ), width_min = "10cm" )
+```
+
+## 501CE-NONPROFIT-PC Data Dictionary
+
+```{r}
+dd %>%
+  dplyr::filter( form_scope == "501CE-NONPROFIT-PC" ) %>% 
+  dplyr::select(  
+    variable_name,
+    variable_description,
+    variable_source,
+    form_location,
+    variable_coverage,
+    variable_datatype
+    ) %>% 
+  knitr::kable( escape=FALSE,
+                col.names = c("Variable Name", 
+                              "Description",
+                              "Variable Source",
+                              "Location Code",
+                              "Coverage",
+                              "Data Type") ) %>%
+  kableExtra::kable_styling( full_width = FALSE ) %>% 
+  column_spec( column = c( 2, 4 ), width_min = "10cm" )
+```
