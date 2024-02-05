@@ -9,10 +9,10 @@ categories:
 featured: true
 featuredOrder: 1
 primaryCtaUrl: "../../catalogs/catalog-core_harmonized.html"
+primaryCtaText: Data Catalog
 primaryCtaCaption:
 author:
 - id: jlecy
-- id: thiya
 citation: 
   author: "Jesse Lecy"
   citationDate: "2024"
@@ -30,13 +30,15 @@ The NCCS Core Data Series is derived from nonprofits’ annual Form 990 filings 
 * **Geographic information**: the location and service areas of nonprofits  
 * **Time series data**: offer data from 1989 onward, which makes it possible to track trends in the nonprofit sector
 
-The current Core Data Series has been updated with the following features:
+The latest version of the Core Data Series has been updated with the following features:
 
-* Standardized variable names across all data sets
+* Standardized variable names and data types across all data sets
+* Updated data dictionaries that cover all data sets
+* A new ID column (**RTRN_ID**) that maps each row to a unique filing ID
+* A column (**DUP_RTRN_X**) that indicates the presence of multiple filings by the same EIN
 
-This makes it easier for users to construct panel data sets.
-
-A description of these variables is provided in the accompanying data dictionary.
+This makes it easier for users to construct panel data sets. A description of these 
+variables is provided in the accompanying data dictionaries.
 
 ## Versions
 
@@ -45,16 +47,22 @@ The data is separated into two populations:
 * 501c3 Charities (990 + 990EZ filers)
 * All other 501c Nonprofits (990 + 990EZ filers) 
 
-Two versions differ by organizational size (smaller nonprofits file Form 990EZ):
+And two scopes that differ by organizational size (smaller nonprofits file Form 990EZ):
 
-* PZ version: all 990 + 990EZ filers - a larger number of organizations but smaller number of variables 
-* PC version: only includes full Form 990 filers - a smaller number of organizations but a larger number of variables
+* PZ scope: all 990 + 990EZ filers - a larger number of organizations but smaller number of variables 
+* PC scope: only includes full Form 990 filers - a smaller number of organizations but a larger number of variables
 
-The PZ version includes approximately 150 variables from 400,000 nonprofits. The PC version includes about 300 variables from 200,000 nonprofits. These numbers vary over time.
+The PZ version includes approximately 150 variables from 400,000 nonprofits. The PC version includes about 300 variables from 200,000 nonprofits. These numbers vary over time. Taken together, the combination
+of population and scope distinctions creates 4 separate data sets:
+
+* 501C3-CHARITIES-PZ: Contains variables found in both 990 and 990EZ filings for 501(c)(3) organizations
+* 501C3-CHARITIES-PC: Contains variables found only in 990 filings for 501(c)(3) organizations
+* 501CE-NONPROFIT-PZ: Contains variables found in both 990 and 990EZ filings for all other 501(c) organizations
+* 501CE-NONPROFIT-PC: Contains variables found only in 990 filings for all other 501(c) organizations
 
 ## Use
 
-Data can be downloaded via the [**data catalog**](https://urbaninstitute.github.io/nccs/catalogs/catalog-core.html) page.
+Data can be downloaded via the [**data catalog**](https://urbaninstitute.github.io/nccs/catalogs/catalog-core_harmonized.html) page.
 
 ## Data Series Attributes 
 
@@ -85,11 +93,13 @@ The Core Data Series contains two types of form scope:
 
 ![image](https://github.com/lecy/nccs/assets/1209099/cf809446-da58-4867-9870-b0035a942847)
  
-**Data File Naming**
+**Data Set Naming Conventions**
 
-The data are organized into five files that have the following naming conventions:
+The data sets in the catalog have the following naming conventions:
 
-![image](https://github.com/lecy/nccs/assets/1209099/f25e1bc8-ff5e-4188-8125-956fd8f26ac9)
+***Data Series-Tax Year-Types of Organizations-Scope of Filing***
+
+For example, CORE-2015-501C3-CHARITIES-PC.csv contains variables from Form 990 filings (**PC**) for 501(c)(3) organizations (**501C3-CHARITIES**) in tax year 2015.
 
 **Form Scope PZ**: The datasets with form scope of PZ will contain the full set of 990 and 990-EZ tax filers for a given year, but the trade-off is that 990-EZ filers have a much smaller form and thus fewer variables. Datasets with PZ scope represent a more extensive population and a more limited selection of fields. 
 

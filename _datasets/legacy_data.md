@@ -9,6 +9,7 @@ categories:
 featured: false
 primaryCtaUrl: "../../catalogs/catalog-core.html"
 primaryCtaCaption:
+primaryCtaText: Data Catalog
 author:
 - id: jlecy
 - id: thiya
@@ -86,9 +87,9 @@ The Core Data Series contains two types of form scope:
  
 **Data File Naming**
 
-The data are organized into five files that have the following naming conventions:
+The data sets in the catalog have the following naming conventions:
 
-![image](https://github.com/lecy/nccs/assets/1209099/f25e1bc8-ff5e-4188-8125-956fd8f26ac9)
+***Data Series-Tax Year-Types of Organizations-Scope of Filing***
 
 **Form Scope PZ**: The datasets with form scope of PZ will contain the full set of 990 and 990-EZ tax filers for a given year, but the trade-off is that 990-EZ filers have a much smaller form and thus fewer variables. Datasets with PZ scope represent a more extensive population and a more limited selection of fields. 
 
