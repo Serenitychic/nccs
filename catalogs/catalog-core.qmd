@@ -1,5 +1,5 @@
 ---
-title: "NCCS 'Core' Data Catalog"
+title: "NCCS Legacy 'Core' Data Catalog"
 format: html
 editor: visual
 execute: 

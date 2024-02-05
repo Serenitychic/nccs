@@ -1,0 +1,2322 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>501C3-CHARITIES-PC Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="dd-core_501c3-charities-pc_files/libs/clipboard/clipboard.min.js"></script>
+<script src="dd-core_501c3-charities-pc_files/libs/quarto-html/quarto.js"></script>
+<script src="dd-core_501c3-charities-pc_files/libs/quarto-html/popper.min.js"></script>
+<script src="dd-core_501c3-charities-pc_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="dd-core_501c3-charities-pc_files/libs/quarto-html/anchor.min.js"></script>
+<link href="dd-core_501c3-charities-pc_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="dd-core_501c3-charities-pc_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="dd-core_501c3-charities-pc_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="dd-core_501c3-charities-pc_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="dd-core_501c3-charities-pc_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+<script src="dd-core_501c3-charities-pc_files/libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="dd-core_501c3-charities-pc_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">501C3-CHARITIES-PC Data Dictionary</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>The PC Version of the harmonized 501(c)(3) Charities data set contains variables only found in the Form 990. This data set includes a smaller number of organizations but larger number of variables than the 501(c)(3) Charities PZ data set.</p>
+<section id="data-dictionary" class="level2">
+<h2 class="anchored" data-anchor-id="data-dictionary">Data Dictionary</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Variable Name</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Variable Source</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Location Code</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Coverage</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Data Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">RTRN_ID</td>
+<td style="text-align: left; min-width: 10cm;">Unique Row ID</td>
+<td style="text-align: left;">NCCS</td>
+<td style="text-align: left; min-width: 10cm;">NA</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">DUP_RTRN_X</td>
+<td style="text-align: left; min-width: 10cm;">Indicates a Duplicate Return</td>
+<td style="text-align: left;">NCCS</td>
+<td style="text-align: left; min-width: 10cm;">NA</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MISSION_NTEE</td>
+<td style="text-align: left; min-width: 10cm;">IRS NTEE Code</td>
+<td style="text-align: left;">NCCS</td>
+<td style="text-align: left; min-width: 10cm;">NA</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GEO_ZIP5</td>
+<td style="text-align: left; min-width: 10cm;">5 Digit Zip Code</td>
+<td style="text-align: left;">NCCS</td>
+<td style="text-align: left; min-width: 10cm;">NA</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_00_EXEMPT_STAT_501C3_X</td>
+<td style="text-align: left; min-width: 10cm;">Indicates a 501(c)(3) organization</td>
+<td style="text-align: left;">HD</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-00-SECTION-J; F990-PC-PART-00-SECTION-I</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_00_GROUP_EXEMPT_NUM</td>
+<td style="text-align: left; min-width: 10cm;">Group exemption number</td>
+<td style="text-align: left;">HD</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-00-SECTION-F; F990-PC-PART-00-SECTION-HC</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_00_ORG_ADDR_CITY</td>
+<td style="text-align: left; min-width: 10cm;">Address of Filing Organization (US City)</td>
+<td style="text-align: left;">HD</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-00-SECTION-C; F990-PC-PART-00-SECTION-C</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_00_ORG_ADDR_L1</td>
+<td style="text-align: left; min-width: 10cm;">Address of Filing Organization (US Line 1)</td>
+<td style="text-align: left;">HD</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-00-SECTION-C; F990-PC-PART-00-SECTION-C</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_00_ORG_ADDR_STATE</td>
+<td style="text-align: left; min-width: 10cm;">Address of Filing Organization (US State)</td>
+<td style="text-align: left;">HD</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-00-SECTION-C; F990-PC-PART-00-SECTION-C</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_00_ORG_ADDR_ZIP</td>
+<td style="text-align: left; min-width: 10cm;">Address of Filing Organization (US Zip Code)</td>
+<td style="text-align: left;">HD</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-00-SECTION-C; F990-PC-PART-00-SECTION-C</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_00_ORG_EIN</td>
+<td style="text-align: left; min-width: 10cm;">Orgainization Employer Identification Number (EIN)</td>
+<td style="text-align: left;">HD</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-00-SECTION-D</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_00_ORG_NAME_DBA_L1</td>
+<td style="text-align: left; min-width: 10cm;">Doing business as (line 1)</td>
+<td style="text-align: left;">HD</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-00-SECTION-C</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_00_ORG_NAME_L1</td>
+<td style="text-align: left; min-width: 10cm;">Name of Filing Organization (line 1)</td>
+<td style="text-align: left;">HD</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-00-SECTION-C</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_00_RETURN_TYPE</td>
+<td style="text-align: left; min-width: 10cm;">Return type</td>
+<td style="text-align: left;">HD</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-00-LINE-00</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_00_TAX_PERIOD_BEGIN_DATE</td>
+<td style="text-align: left; min-width: 10cm;">Tax period begin date</td>
+<td style="text-align: left;">HD</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-00-SECTION-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_00_TAX_PERIOD_END_DATE</td>
+<td style="text-align: left; min-width: 10cm;">Tax period end date</td>
+<td style="text-align: left;">HD</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-00-SECTION-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_00_TAX_YEAR</td>
+<td style="text-align: left; min-width: 10cm;">Tax year</td>
+<td style="text-align: left;">HD</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-00-SECTION-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_03_PROG_CODE</td>
+<td style="text-align: left; min-width: 10cm;">Activity2 - Activity code</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-03-LINE-04-ABCD</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013; 2015-2016</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_AFS_CONSOL_X</td>
+<td style="text-align: left; min-width: 10cm;">Consolidated audited financial statement?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-12B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_AFS_IND_X</td>
+<td style="text-align: left; min-width: 10cm;">Independent audited financial statements?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-12A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_BIZ_TRANSAC_DTK_ENTITY_X</td>
+<td style="text-align: left; min-width: 10cm;">Was the organization a party to a business transaction with one of the following parties: An entity of which a current or former officer, director, trustee, or key employee (or a family member thereof) was an officer, director, trustee, or direct, or indirect owner?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-28C</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_BIZ_TRANSAC_DTK_FAM_X</td>
+<td style="text-align: left; min-width: 10cm;">Was the organization a party to a business transaction with one of the following parties: A family member of a current or former officer, director, trustee, or key employee?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-28B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_BIZ_TRANSAC_DTK_X</td>
+<td style="text-align: left; min-width: 10cm;">Was the organization a party to a business transaction with one of the following parties: A current former officer, director, trustee, or key employee?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-28A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_COLLEC_ART_X</td>
+<td style="text-align: left; min-width: 10cm;">Collections of art?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-08</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_COMP_DTK_YES_X</td>
+<td style="text-align: left; min-width: 10cm;">PartVII; Lines 3; 4; or 5 = "Yes"?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-23</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_CONSERV_EMT_X</td>
+<td style="text-align: left; min-width: 10cm;">Conservation easements?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-07</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_CONTR_ART_HIST_X</td>
+<td style="text-align: left; min-width: 10cm;">Did the organization receive contributions of art, historical treasures, or other similar assets, or qualified conservation contributions?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-30</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_CONTR_NONCSH_MT_25K_X</td>
+<td style="text-align: left; min-width: 10cm;">Did the organization receive more than $25,000 in non-cash contributions?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-29</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_CREDIT_COUNS_X</td>
+<td style="text-align: left; min-width: 10cm;">Credit counseling?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-09</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_DAF_X</td>
+<td style="text-align: left; min-width: 10cm;">NA</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-44A; F990-PC-PART-04-LINE-06</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_DESC_IN_501C3_X</td>
+<td style="text-align: left; min-width: 10cm;">Described in 501(c)(3)?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-01</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013; 2016-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_DOA_X</td>
+<td style="text-align: left; min-width: 10cm;">Partial liquidation? (F990-PC-PART-04-LINE-31-32-COMBINED: F990-EZ-PART-05-LINE-36)</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-32</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_ENDOW_X</td>
+<td style="text-align: left; min-width: 10cm;">Term or permanent endowments?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-10</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_ENTITY_CTRL_X</td>
+<td style="text-align: left; min-width: 10cm;">Did the organization have a controlled entity within the meaning of section 512(b)(13)?</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-45A; F990-PC-PART-04-LINE-35A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_ENTITY_DISREG_X</td>
+<td style="text-align: left; min-width: 10cm;">Did the organization own 100% of an entity disregarded as sperate from the organization under Regulations sections 301.7701.2 and 301.7701-3?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-33</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_ENTITY_RLTD_X</td>
+<td style="text-align: left; min-width: 10cm;">Related entity?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-34</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_FRGN_ACT_X</td>
+<td style="text-align: left; min-width: 10cm;">Foreign activities; etc?</td>
+<td style="text-align: left;">PC; PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-14B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_FRGN_OFFICE_X</td>
+<td style="text-align: left; min-width: 10cm;">At any time during the calender year; did the organization maintain an office outside of the U.S.?</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-42C; F990-PC-PART-04-LINE-14A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_FUNDR_ACT_X</td>
+<td style="text-align: left; min-width: 10cm;">Fundraising activities?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-18</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_GAMING_X</td>
+<td style="text-align: left; min-width: 10cm;">Special events Indicates revenue from gaming</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-06; F990-PC-PART-04-LINE-19</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_GRANT_MT_5K_FRGN_INDIV_X</td>
+<td style="text-align: left; min-width: 10cm;">More than $5000 to individuals Part IX; line 3?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-16</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_GRANT_MT_5K_FRGN_ORG_X</td>
+<td style="text-align: left; min-width: 10cm;">More than $5000 to organizations Part IX; line 3?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-15</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_GRANT_MT_5K_US_INDIV_X</td>
+<td style="text-align: left; min-width: 10cm;">Grants to individuals?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-22</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_GRANT_MT_5K_US_ORG_X</td>
+<td style="text-align: left; min-width: 10cm;">Grants to organizations?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-21</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_GRANT_RLTD_PERS_X</td>
+<td style="text-align: left; min-width: 10cm;">Grant to related person?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-27</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_HOSPITAL_AFS_X</td>
+<td style="text-align: left; min-width: 10cm;">Audited financial statements?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-20B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_HOSPITAL_X</td>
+<td style="text-align: left; min-width: 10cm;">IRS990 - Hospital?</td>
+<td style="text-align: left;">PZ; PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-44B; F990-PC-PART-04-LINE-20A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_LOAN_DTK_X</td>
+<td style="text-align: left; min-width: 10cm;">NA</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-38A; F990-PC-PART-04-LINE-26</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_LOB_ACT_X</td>
+<td style="text-align: left; min-width: 10cm;">Lobbying activities?</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-06-LINE-47; F990-PC-PART-04-LINE-04</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_LTD_X</td>
+<td style="text-align: left; min-width: 10cm;">Form990 Part IV - Terminated? (F990-PC-PART-04-LINE-31-32-COMBINED: F990-EZ-PART-05-LINE-36)</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-31</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_POLI_ACT_X</td>
+<td style="text-align: left; min-width: 10cm;">Political activities?</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-46; F990-PC-PART-04-LINE-03</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_PROF_FUNDR_X</td>
+<td style="text-align: left; min-width: 10cm;">Professional fundraising?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-17</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_PROXY_TAX_X</td>
+<td style="text-align: left; min-width: 10cm;">Subject to proxy tax?</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-35C; F990-PC-PART-04-LINE-05</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_PTR_ACT_X</td>
+<td style="text-align: left; min-width: 10cm;">Did the organization conduct more than 5% of its activities through an entity that is not a related organization and thatis treated as a partnership for federal income tax purposes?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-37</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_REP_FOOTNOTE_FIN48_X</td>
+<td style="text-align: left; min-width: 10cm;">Balance sheet footnote for liability under FIN 48?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-11F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_REP_INVEST_OTH_SEC_X</td>
+<td style="text-align: left; min-width: 10cm;">Balance sheet investments - other securities amounts reported?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-11B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_REP_LAND_BLDG_EQUIP_X</td>
+<td style="text-align: left; min-width: 10cm;">Balance sheet land; buildings; equipment amounts reported?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-11A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_REP_OTH_ASSET_X</td>
+<td style="text-align: left; min-width: 10cm;">Balance sheet other assets amounts reported?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-11D</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_REP_OTH_LIAB_X</td>
+<td style="text-align: left; min-width: 10cm;">Balance sheet other liabilities amounts reported?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-11E</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_REP_PROG_RLTD_X</td>
+<td style="text-align: left; min-width: 10cm;">Balance sheet investments - program related amounts reported?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-11C</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_SCHED_B_REQ_X</td>
+<td style="text-align: left; min-width: 10cm;">Indicates Schedule B is not required</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-00-SECTION-H; F990-PC-PART-04-LINE-02</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_SCHED_O_REQ_X</td>
+<td style="text-align: left; min-width: 10cm;">Did the organization complete Schedule O and provide explanatios in Schedule O for Part VI, lines 11b and 19?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-38</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_SCHOOL_X</td>
+<td style="text-align: left; min-width: 10cm;">IRS990 - School?</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-06-LINE-48; F990-PC-PART-04-LINE-13</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013; 2016-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_TAX_EXEMPT_BOND_ESCROW_X</td>
+<td style="text-align: left; min-width: 10cm;">Escrow account?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-24C</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_TAX_EXEMPT_BOND_INVEST_X</td>
+<td style="text-align: left; min-width: 10cm;">Investment income?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-24B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_TAX_EXEMPT_BOND_ISSUER_X</td>
+<td style="text-align: left; min-width: 10cm;">On behalf of issuer?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-24B; F990-PC-PART-04-LINE-24D</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_TAX_EXEMPT_BOND_X</td>
+<td style="text-align: left; min-width: 10cm;">Tax exempt bonds?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-24A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_TRANSAC_ENGAGED_X</td>
+<td style="text-align: left; min-width: 10cm;">501(c)(3) and 501(c)(4) orgs: Did the organization engage in any section 4958 excess benefit transaction</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-40B; F990-PC-PART-04-LINE-25A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_04_TRANSAC_PY_X</td>
+<td style="text-align: left; min-width: 10cm;">Prior excess benefit transaction?</td>
+<td style="text-align: left;">PZ; PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-04-LINE-25B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_04_TRANSFER_EXEMPT_ORG_X</td>
+<td style="text-align: left; min-width: 10cm;">Did the organization make any transfers to an exempt non-charitable related organization?</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-06-LINE-49A; F990-PC-PART-04-LINE-36</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_170C_FORM_1098C_FILED_X</td>
+<td style="text-align: left; min-width: 10cm;">Form 1098-C filed?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-07H</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013; 2016-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_05_170C_FORM_8282_REQ_X</td>
+<td style="text-align: left; min-width: 10cm;">Form 8282 property disposed of?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-07C</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013; 2016-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_170C_FORM_8899_FILED_X</td>
+<td style="text-align: left; min-width: 10cm;">Form 8899 filed?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-07G</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_05_170C_FUNDS_FOR_PREMIUM_X</td>
+<td style="text-align: left; min-width: 10cm;">Funds to pay premiums?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-07E</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_170C_NUM_FORM_8282_FILED_X</td>
+<td style="text-align: left; min-width: 10cm;">Number of 8282s filed</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-07D</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_05_170C_PREMIUM_PAID_X</td>
+<td style="text-align: left; min-width: 10cm;">Premiums paid?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-07F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_170C_QUID_PRO_QUO_CONTR_X</td>
+<td style="text-align: left; min-width: 10cm;">Quid pro quo contributions?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-07A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_05_170C_QUID_PRO_QUO_NOTIFY_X</td>
+<td style="text-align: left; min-width: 10cm;">Quid pro quo disclosure?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-07B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_4947_FORM_990_FILED_1041_X</td>
+<td style="text-align: left; min-width: 10cm;">Filed 990 in lieu of 1041?</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-43; F990-PC-PART-05-LINE-12A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013; 2016-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_05_4947_TAX_EXEMPT_INT_AMT</td>
+<td style="text-align: left; min-width: 10cm;">Indicates section 4947(a)(1) nonexempt charitable trusts filing Form 990 in lieu of Form 1041</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-43; F990-PC-PART-05-LINE-12B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_501C12_GRO_INCOME_MEMB</td>
+<td style="text-align: left; min-width: 10cm;">Gross income from members</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-11A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_05_501C12_GRO_INCOME_OTH</td>
+<td style="text-align: left; min-width: 10cm;">Gross income, other sources</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-11B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_501C29_LIC_HEALTH_PLAN_X</td>
+<td style="text-align: left; min-width: 10cm;">Is the organization licensed to issue qualified health plans in more than one state?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-13A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_05_501C29_RESERVE_MAINT_AMT</td>
+<td style="text-align: left; min-width: 10cm;">Reserves maintained amount</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-13C</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_501C29_STATE_RESERVE_AMT</td>
+<td style="text-align: left; min-width: 10cm;">State required reserves amount</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-13B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_05_501C7_GRO_RCPT_PUB_USE</td>
+<td style="text-align: left; min-width: 10cm;">501(c)(7) orgs: Gross receipts, included on line 9, for public use of club facilities</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-39B; F990-PC-PART-05-LINE-10B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_501C7_INITIATION_FEES</td>
+<td style="text-align: left; min-width: 10cm;">501(c)(7) orgs: Initiation fees and capital contributions included on line 9</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-39A; F990-PC-PART-05-LINE-10A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_05_COMPLY_BACKUP_WITHHOLD_X</td>
+<td style="text-align: left; min-width: 10cm;">Compliance with backup witholding?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-01C</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_DAF_DIST_DONOR_X</td>
+<td style="text-align: left; min-width: 10cm;">DAFs - Distribution to donor?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-09B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_05_DAF_EXCESS_BIZ_HOLDING_X</td>
+<td style="text-align: left; min-width: 10cm;">Donor advised fund have excess business holdings?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-08</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_DAF_TAXABLE_DIST_X</td>
+<td style="text-align: left; min-width: 10cm;">DAFs - Taxable distributions?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-09A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_05_EMPL_TAX_RETURN_FILED_X</td>
+<td style="text-align: left; min-width: 10cm;">Employment tax returns filed?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-02B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_FRGN_FIN_ACC_X</td>
+<td style="text-align: left; min-width: 10cm;">Foreign financial account?</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-42B; F990-PC-PART-05-LINE-04A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_05_NONDEDUCT_CONTR_NOTIFY_X</td>
+<td style="text-align: left; min-width: 10cm;">Non-deduct. disclosure?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-06B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_NONDEDUCT_CONTR_X</td>
+<td style="text-align: left; min-width: 10cm;">Non-deductible contributions?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-06A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_05_NUM_EMPL</td>
+<td style="text-align: left; min-width: 10cm;">Number of employees</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-02A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_NUM_FORM_1096_BOX_3</td>
+<td style="text-align: left; min-width: 10cm;">Number forms transmitted with 1096</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-01A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_05_NUM_FORM_W2G</td>
+<td style="text-align: left; min-width: 10cm;">Number W-2Gs included in 1a</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-01B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_PTST_FORM_8886T_FILED_X</td>
+<td style="text-align: left; min-width: 10cm;">Form 8886-T filed?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-05C</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_05_PTST_PARTY_NOTIFY_X</td>
+<td style="text-align: left; min-width: 10cm;">Taxable party notification?</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-05B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_PTST_X</td>
+<td style="text-align: left; min-width: 10cm;">Prohibited tax shelter transaction?</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-40E; F990-PC-PART-05-LINE-05A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_05_TANNING_FORM_720_FILED_X</td>
+<td style="text-align: left; min-width: 10cm;">Form 720 filed and taxes paid on indoor tanning services?</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-44D; F990-PC-PART-05-LINE-14B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013; 2016-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_TANNING_SVC_PROV_X</td>
+<td style="text-align: left; min-width: 10cm;">Payments received for indoor tanning services?</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-44C; F990-PC-PART-05-LINE-14A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_05_UBIZ_FORM_990T_FILED_X</td>
+<td style="text-align: left; min-width: 10cm;">Form 990-T filed?</td>
+<td style="text-align: left;">PZ; PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-35B; F990-PC-PART-05-LINE-03B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_05_UBIZ_IMCOME_OVER_LIMIT_X</td>
+<td style="text-align: left; min-width: 10cm;">Unrelated business income?</td>
+<td style="text-align: left;">PZ; PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-35A; F990-PC-PART-05-LINE-03A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_07_COMP_DTK_COMP_ORG</td>
+<td style="text-align: left; min-width: 10cm;">Reportable compensation from organization (F990-PC-PART-07-SECTION-A: F990-EZ-PART-04-PART-06-LINE-50-CONBINED)</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-04-COL-C; F990-PC-PART-07-SECTION-A-LINE-01A-COL-D</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_07_COMP_DTK_COMP_OTH</td>
+<td style="text-align: left; min-width: 10cm;">Other compensation (F990-PC-PART-07-SECTION-A: F990-EZ-PART-04-PART-06-LINE-50-CONBINED)</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-04-COL-E; F990-PC-PART-07-SECTION-A-LINE-01A-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_07_COMP_DTK_COMP_RLTD</td>
+<td style="text-align: left; min-width: 10cm;">Reportable compensation from related organizations (F990-PC-PART-07-SECTION-A: F990-EZ-PART-04-PART-06-LINE-50-CONBINED)</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-04-COL-C; F990-PC-PART-07-SECTION-A-LINE-01A-COL-E</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_07_COMP_DTK_NUM_GT_100K</td>
+<td style="text-align: left; min-width: 10cm;">Number individuals greater than $100K (F990-PC-PART-07-SECTION-A: F990-EZ-PART-04-PART-06-LINE-50-CONBINED)</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-07-SECTION-A-LINE-02</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_07_COMP_KONTR_NUM_GT_100K</td>
+<td style="text-align: left; min-width: 10cm;">Total number of independent contractors who received 100K+ from org</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-06-LINE-51D; F990-PC-PART-07-SECTION-B-LINE-02</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_CONTR_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Total contributions</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-01H-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_MISC_BIZCODE</td>
+<td style="text-align: left; min-width: 10cm;">Other Revenue Misc - Business code</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-11-ABC-COL-BIZCODE</td>
+<td style="text-align: left; min-width: 5cm;">2012-2018</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_MISC_OTH_EXCL</td>
+<td style="text-align: left; min-width: 10cm;">Excluded by section 512; 513; or 514: amount</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-11D-COL-D</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_MISC_OTH_RLTD</td>
+<td style="text-align: left; min-width: 10cm;">Related or exempt function revenue</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-11D-COL-B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_MISC_OTH_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Miscellaneous Revenue - Total revenue</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-11D-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_MISC_OTH_UBIZ</td>
+<td style="text-align: left; min-width: 10cm;">Unrelated business revenue</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-11D-COL-C</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_MISC_TOT_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Other revenue - current year</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-08; F990-PC-PART-08-LINE-11E-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_OTH_FUNDR_DIRECT_EXP</td>
+<td style="text-align: left; min-width: 10cm;">Direct expenses</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-08B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_OTH_FUNDR_EVNT_1</td>
+<td style="text-align: left; min-width: 10cm;">IRS990 - 8a-1</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-06B-1; F990-PC-PART-08-LINE-08A-1</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_OTH_FUNDR_NET_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Net Income From Fundraising Events - Total revenue</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-08C-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_OTH_GAMING</td>
+<td style="text-align: left; min-width: 10cm;">Gross income from gaming activities</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-06A; F990-PC-PART-08-LINE-09A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_OTH_GAMING_DIRECT_EXP</td>
+<td style="text-align: left; min-width: 10cm;">Direct expenses</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-09B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_OTH_GAMING_NET_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Net Income From Gaming - Total revenue</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-09C-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_OTH_INVEST_BOND_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Income From Invest Bond Proceeds - Total revenue</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-04-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_OTH_INVEST_INCOME_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Invest income</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-04; F990-PC-PART-08-LINE-03-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_OTH_INV_COST_GOODS</td>
+<td style="text-align: left; min-width: 10cm;">Less: cost of goods sold</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-07B; F990-PC-PART-08-LINE-10B</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_OTH_INV_GRO_SALE</td>
+<td style="text-align: left; min-width: 10cm;">gross sales of inventory</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-07A; F990-PC-PART-08-LINE-10A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_OTH_INV_NET_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Gross profit (or loss) from sales of inventory</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-07C; F990-PC-PART-08-LINE-10C-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_OTH_RENT_GRO_PERS</td>
+<td style="text-align: left; min-width: 10cm;">Gross Rents - Amount</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-06A-COL-ii</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_OTH_RENT_GRO_REAL</td>
+<td style="text-align: left; min-width: 10cm;">Gross Rents - Real amount</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-06A-COL-i</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_OTH_RENT_INCOME_PERS</td>
+<td style="text-align: left; min-width: 10cm;">Rental Income Or Loss - Amount</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-06C-COL-ii</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_OTH_RENT_INCOME_REAL</td>
+<td style="text-align: left; min-width: 10cm;">Rental Income Or Loss - Real amount</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-06C-COL-i</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_OTH_RENT_LESS_EXP_PERS</td>
+<td style="text-align: left; min-width: 10cm;">Less Rental Expenses - Amount</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-06B-COL-ii</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_OTH_RENT_LESS_EXP_REAL</td>
+<td style="text-align: left; min-width: 10cm;">Less Rental Expenses - Real amount</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-06B-COL-i</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_OTH_RENT_NET_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Net Rental Income Or Loss - Total revenue</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-06D-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_OTH_ROY_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Royalties Revenue - Total revenue</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-05-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_OTH_SALE_ASSET_OTH</td>
+<td style="text-align: left; min-width: 10cm;">Gross Amount Sales Assets - Other amount</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-07A-COL-ii</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_OTH_SALE_ASSET_SEC</td>
+<td style="text-align: left; min-width: 10cm;">Securities amount</td>
+<td style="text-align: left;">PC; PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-07A-COL-i</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_OTH_SALE_GAIN_NET_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Gain or (loss) from sale of assets other than inventory</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-05C; F990-PC-PART-08-LINE-07D-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_OTH_SALE_GAIN_OTH</td>
+<td style="text-align: left; min-width: 10cm;">Gain Or Loss - Other amount</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-07C-COL-ii</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_OTH_SALE_GAIN_SEC</td>
+<td style="text-align: left; min-width: 10cm;">Securities amount</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-07C-COL-i</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_OTH_SALE_LESS_COST_OTH</td>
+<td style="text-align: left; min-width: 10cm;">Less Cost Oth Basis Sales Expenses - Other amount</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-07B-COL-ii</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_OTH_SALE_LESS_COST_SEC</td>
+<td style="text-align: left; min-width: 10cm;">Securities amount</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-07B-COL-i</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_PROG_DESC</td>
+<td style="text-align: left; min-width: 10cm;">Program Service Revenue - Description</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-02-ABCDE</td>
+<td style="text-align: left; min-width: 5cm;">2012-2018</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_PROG_OTH_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Total Oth Program Service Revenue - Total revenue</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-02F-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_PROG_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Program Service Revenue - Total revenue</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-02-ABCDE-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_08_REV_PROG_TOT_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Program service revenue total</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-02G-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_TOT_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Total Revenue - Total revenue</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-12-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_09_EXP_AD_PROMO_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Advertising and promotion - total expense</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-12-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_09_EXP_BEN_PAID_MEMB_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Benefits Paid to or for Members - Total Expense</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-04-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_09_EXP_COMP_DSQ_PERS_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Compensation not included above, or to disqualified persons - Total Expense</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-06-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_09_EXP_COMP_DTK_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Compensation for Current Officers, Directors, Trustees and Key Employees - Total Expense</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-05-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_09_EXP_CONF_MEETING_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Conferences, conventions, and meetings- total expense</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-19-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_09_EXP_DEPREC_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Depreciation, depletion, and amortization</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-22-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_09_EXP_FEE_SVC_ACC_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Fees for Services - Accounting - Total Expense</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-11C-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_09_EXP_FEE_SVC_FUNDR_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Fees for Professional Fundraising Services - Total Expense</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-11E-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_09_EXP_FEE_SVC_INVEST_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Investment Management Fees - Total Expense</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-11F-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_09_EXP_FEE_SVC_LEGAL_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Fees for Services - Legal - Total Expense</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-11B-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_09_EXP_FEE_SVC_LOB_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Fees for Services - Lobbying - Total Expense</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-11D-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_09_EXP_FEE_SVC_MGMT_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Fees for Services - Management - Total Expense</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-11A-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_09_EXP_FEE_SVC_OTH_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Fees for Services - Other - Total Expense</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-11G-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_09_EXP_GRANT_FRGN_TOT</td>
+<td style="text-align: left; min-width: 10cm;">total Grants to Foreign Orgs and Governments - Total Expense</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-03-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_09_EXP_GRANT_US_INDIV_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Grants To Domestic Individuals - Total</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-02-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_09_EXP_GRANT_US_ORG_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Grants To Domestic Orgs - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-01-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer;numeric</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_09_EXP_INFO_TECH_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Information Technology - Total</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-14-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_09_EXP_INSURANCE_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Insurance - Total</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-23-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_09_EXP_INT_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Interest - Total</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-20-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_09_EXP_OCCUPANCY_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Occupancy; rent; utilities; and maintenance</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-14; F990-PC-PART-09-LINE-16-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_09_EXP_OFFICE_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Office Expenses - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-13-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_09_EXP_OTH_EMPL_BEN_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Other Employee Benefits - Total</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-09-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_09_EXP_OTH_SAL_WAGE_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Other Salaries And Wages - Total</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-07-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_09_EXP_OTH_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Other Expenses - Total</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-24-ABCD-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_09_EXP_PAYROLL_TAX_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Payroll Taxes - Total</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-10-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_09_EXP_PAY_AFFIL_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Payments To Affiliates - Total</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-21-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_09_EXP_PENSION_CONTR_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Pension Plan Contributions - Total</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-08-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_09_EXP_ROY_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Royalties - Total</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-15-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_09_EXP_TOT_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Total Functional Expenses - Total</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-25-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_09_EXP_TRAVEL_ENTMT_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Travel Entrtnmnt Public Officials - Total</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-18-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_09_EXP_TRAVEL_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Travel - Total</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-17-COL-A</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_ASSET_ACC_NET_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Net accounts receivable, end of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-04-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_ASSET_CASH_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Cash, non-interest-bearing, end of year</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-01-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_ASSET_EXP_PREPAID_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-09-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_ASSET_INTANGIBLE_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-14-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer;numeric</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_ASSET_INVEST_PROG_RLTD_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-13-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_ASSET_INVEST_SEC_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-11-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_ASSET_INVEST_SEC_OTH_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-12-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_ASSET_INV_SALE_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-08-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_ASSET_LAND_BLDG_NET_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Net value including lands; buildings; and equipment; end of year</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-02-LINE-23-EOY; F990-PC-PART-10-LINE-10C-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_ASSET_LOAN_DSQ_PERS_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-06-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_ASSET_LOAN_OFF_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-05-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_ASSET_NOTE_LOAN_NET_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-07-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_ASSET_OTH_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-15-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_ASSET_PLEDGE_NET_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-03-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_ASSET_SAVING_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-02-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_ASSET_TOT_BOY</td>
+<td style="text-align: left; min-width: 10cm;">Total assets, beginning of year</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-02-LINE-25-BOY; F990-PC-PART-10-LINE-16-BOY</td>
+<td style="text-align: left; min-width: 5cm;">2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_ASSET_TOT_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Total assets, end of year</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-02-LINE-25-EOY; F990-PC-PART-10-LINE-16-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_LIAB_ACC_PAYABLE_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Accounts payable and accrued expenses, end of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-17-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_LIAB_ESCROW_ACC_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Escrow or custodial account liability, end of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-21-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_LIAB_GRANT_PAYABLE_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-18-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer;numeric</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_LIAB_LOAN_OFF_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-22-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer;numeric</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_LIAB_MTG_NOTE_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-23-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_LIAB_NOTE_UNSEC_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-24-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_LIAB_OTH_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-25-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_LIAB_REV_DEFERRED_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Deferred revenue, end of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-19-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_LIAB_TAX_EXEMPT_BOND_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-20-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_LIAB_TOT_BOY</td>
+<td style="text-align: left; min-width: 10cm;">Total liabilities, beginning of year</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-02-LINE-26-BOY; F990-PC-PART-10-LINE-26-BOY</td>
+<td style="text-align: left; min-width: 5cm;">2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_LIAB_TOT_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Total liabilities, end of year</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-02-LINE-26-EOY; F990-PC-PART-10-LINE-26-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_NAFB_CAP_STCK_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Capital stock or trust principal, or current funds, end of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-30-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_NAFB_CAP_SURPLUS_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-31-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_NAFB_EARNING_RETAINED_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-32-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_NAFB_RESTRICT_PERM_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-29-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_NAFB_RESTRICT_TEMP_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-28-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_NAFB_TOT_BOY</td>
+<td style="text-align: left; min-width: 10cm;">Net assets or fund balances, beginning of year</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-02-LINE-27-BOY; F990-PC-PART-10-LINE-33-BOY</td>
+<td style="text-align: left; min-width: 5cm;">2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_NAFB_TOT_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Net assets or fund balances, end of year</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-02-LINE-27-EOY; F990-PC-PART-10-LINE-33-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_10_NAFB_TOT_LIAB_NAFB_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-34-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_10_NAFB_UNRESTRICT_EOY</td>
+<td style="text-align: left; min-width: 10cm;">Ending of year</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-27-EOY</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SA_01_PCSTAT_ORG_AMT_SUPPORT_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Sum of amounts of support</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-01-LINE-12G-COL-v-TOT</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SA_01_PCSTAT_SUPPORT_ORG_NUM</td>
+<td style="text-align: left; min-width: 10cm;">Number of supported organizations</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-01-LINE-12F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SA_01_PCSTAT_SUPPORT_ORG_X</td>
+<td style="text-align: left; min-width: 10cm;">Supporting organization 509(a)(3)</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-01-LINE-12</td>
+<td style="text-align: left; min-width: 5cm;">2012-2013</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SA_02_PUB_CONTR_SBST_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Amounts from substantial contributors total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-A-LINE-05-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SA_02_PUB_GIFT_GRANT_CONTR_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Gifts Grants Contri Rcvd170 Grp - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-A-LINE-01-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SA_02_PUB_SUPPORT_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Public Support Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-A-LINE-06-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SA_02_PUB_TAXREV_LEVIED_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Tax Rev Levied For Org Benefit170 - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-A-LINE-02-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SA_02_PUB_TOT_L123_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Total - Total - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-A-LINE-04-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SA_02_PUB_VALUE_SVC_GOVT_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Govt Furn Srvc Fclts Vl170 Grp - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-A-LINE-03-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SA_02_TOT_AMT_L4_CY_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Amounts From Line4 - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-B-LINE-07-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SA_02_TOT_GRO_RCPT_RLTD_ACTS</td>
+<td style="text-align: left; min-width: 10cm;">Gross receipts from admissions; merchandise sold or services performed; or furnishing of facilities in any activity that is related to the organization's tax-exempt purpose</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-B-LINE-12</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SA_02_TOT_INCOME_GRO_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Gross Investment Income - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-B-LINE-08-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SA_02_TOT_INCOME_NET_UBIZ_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Net UBI - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-B-LINE-09-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SA_02_TOT_INCOME_OTH_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Other Income - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-B-LINE-10-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SA_02_TOT_SUPPORT_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Form990 Schedule APart II - Total support</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-B-LINE-11-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SA_03_PUB_ADD_L7AB_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Subst And Dsqlfy Prsns Tot Grp - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-A-LINE-07C-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SA_03_PUB_AMT_CONTR_SBST_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Amts From Subst Contributors - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-A-LINE-07B-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SA_03_PUB_AMT_PERS_DSQ_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Amounts Rcvd Dsqlfy Person Grp - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-A-LINE-07A-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SA_03_PUB_GIFT_GRANT_CONTR_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Gifts Grants Contrib Received - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-A-LINE-01-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SA_03_PUB_GRO_RCPT_ADM_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Gross Receipts Admissions Grp - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-A-LINE-02-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SA_03_PUB_GRO_RCPT_NONUBIZ_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Gross Receipts From Non UBI - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-A-LINE-03-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SA_03_PUB_SUPPORT_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Public support total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-A-LINE-08-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SA_03_PUB_TAXREV_LEVIED_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Tax Rev Levied For Org Benefit509 - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-A-LINE-04-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SA_03_PUB_TOT_L1_5_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Total - Total - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-A-LINE-06-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SA_03_PUB_VALUE_SVC_GOVT_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Govt Furn Srvc Fclts Vl509 Grp - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-A-LINE-05-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SA_03_TOT_ADD_L10AB_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Investment Income And UBTI - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-B-LINE-10C-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SA_03_TOT_AMT_L6_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Amts From Line6 - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-B-LINE-09-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SA_03_TOT_INCOME_GRO_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Gross Investment Income - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-B-LINE-10A-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SA_03_TOT_INCOME_NET_UBIZ_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Net Income From Other UBI - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-B-LINE-11-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SA_03_TOT_INCOME_OTH_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Other Income - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-B-LINE-12-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SA_03_TOT_INCOME_UBIZ_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Post1975 UBTI - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-B-LINE-10B-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SA_03_TOT_SUPPORT_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Total Support Calendar Year Grp - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-B-LINE-13-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SR_02_RLTD_ORG_PCSTAT</td>
+<td style="text-align: left; min-width: 10cm;">Public charity status (if 501(c)(3))</td>
+<td style="text-align: left;">PC</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-R-PART-02-COL-E</td>
+<td style="text-align: left; min-width: 5cm;">2012-2019</td>
+<td style="text-align: left;">character</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

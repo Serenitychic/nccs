@@ -7,7 +7,7 @@
 #' 
 #' @param s3_catalog. data.frame. Data frame containing metadata for objects in S3
 #' @param series character scalar. Name of NCCS data series. Accepted values
-#' are "core", "bmf".
+#' are "core", "bmf", "core-harmonized".
 #' @param paths character vector. Vector of object keys from S3 bucket.
 #' @param tscope character scalar. Type of tax exemption. Accepted values are
 #'               "NONPROFIT" ( All other 501c type organizations besides 501c3), 
@@ -73,7 +73,7 @@ construct_catalog <- function(s3_catalog,
     
   }
     
-  if (! series %in% c("census-crosswalk")){
+  if (! series %in% c("census-crosswalk", "core-harmonized")){
     
     profile_urls <- make_archive_urls(series = series, paths = paths)
     profile_buttons <- make_buttons(urls = profile_urls, button_name = "profile")
@@ -136,7 +136,11 @@ get_file_paths <- function(series,
     expr <- "BMF-.*-PX" 
     paths <- grep(expr, paths, value = TRUE)
   } else if (series == "core"){
-    expr <- paste0( "CORE-[0-9]{4}-501C[0-9A-Z]-", tscope )
+    expr <- paste0( "CORE-[0-9]{4}-501C[0-9A-Z]-", tscope, "-", fscope, "\\.csv" )
+    paths <- grep( expr, paths, value = TRUE )
+    paths <- grep( paste0( "-", fscope, "\\b"), paths, value=T )
+  } else if (series == "core-harmonized"){
+    expr <- paste0( "CORE-[0-9]{4}-501C[0-9A-Z]-", tscope, ".*HRMN\\.csv" )
     paths <- grep( expr, paths, value = TRUE )
     paths <- grep( paste0( "-", fscope, "\\b"), paths, value=T )
   } else if (series == "misc"){
@@ -151,7 +155,7 @@ get_file_paths <- function(series,
   } else if (series == "revocations"){
     paths <- grep("REVOCATIONS", paths, value = TRUE)
   }
-  
+
  return(paths)
   
 }
@@ -254,8 +258,8 @@ get_month <- function( paths ) {
 
 make_buttons <- function(urls, button_name) {
   
-  button_dic = list("download" = " class='button'> DOWNLOAD </a>",
-                    "profile" = " class='button2'> PROFILE </a>")
+  button_dic = list("download" = " class='button'> Download </a>",
+                    "profile" = " class='button2'> Access </a>")
   
   buttons <- paste0("<a href=",
                     urls,

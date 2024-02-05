@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>501c3 Charities PZ Data Dictionary</title>
+<title>501CE-NONPROFIT-PZ Data Dictionary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,19 +23,19 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="dd-core_harmonized_files/libs/clipboard/clipboard.min.js"></script>
-<script src="dd-core_harmonized_files/libs/quarto-html/quarto.js"></script>
-<script src="dd-core_harmonized_files/libs/quarto-html/popper.min.js"></script>
-<script src="dd-core_harmonized_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="dd-core_harmonized_files/libs/quarto-html/anchor.min.js"></script>
-<link href="dd-core_harmonized_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="dd-core_harmonized_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="dd-core_harmonized_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="dd-core_harmonized_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="dd-core_harmonized_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="dd-core_501c-nonprofit-pz_files/libs/clipboard/clipboard.min.js"></script>
+<script src="dd-core_501c-nonprofit-pz_files/libs/quarto-html/quarto.js"></script>
+<script src="dd-core_501c-nonprofit-pz_files/libs/quarto-html/popper.min.js"></script>
+<script src="dd-core_501c-nonprofit-pz_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="dd-core_501c-nonprofit-pz_files/libs/quarto-html/anchor.min.js"></script>
+<link href="dd-core_501c-nonprofit-pz_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="dd-core_501c-nonprofit-pz_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="dd-core_501c-nonprofit-pz_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="dd-core_501c-nonprofit-pz_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="dd-core_501c-nonprofit-pz_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
-<script src="dd-core_harmonized_files/libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="dd-core_harmonized_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<script src="dd-core_501c-nonprofit-pz_files/libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="dd-core_501c-nonprofit-pz_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
 </head>
@@ -48,7 +48,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">501c3 Charities PZ Data Dictionary</h1>
+<h1 class="title">501CE-NONPROFIT-PZ Data Dictionary</h1>
 </div>
 
 
@@ -63,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>The PZ Version of the harmonized 501C3 Charities data set contains variables common across both Form 990 and Form 990EZ filings. This data set includes a larger number of organizations but contains a smaller number of variables.</p>
+<p>The PZ Version of the harmonized 501(c) Nonprofits data set contains variables common across both Form 990 and Form 990EZ filings for all other 501(c) organizations. This data set includes a larger number of organizations but a smaller number of variables than the 501(c) Nonprofit PC data set.</p>
 <section id="data-dictionary" class="level2">
 <h2 class="anchored" data-anchor-id="data-dictionary">Data Dictionary</h2>
 <div class="cell">
@@ -90,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td style="text-align: left;">DUP_RTRN_X</td>
-<td style="text-align: left; min-width: 10cm;">Indicates Duplicate Return</td>
+<td style="text-align: left; min-width: 10cm;">Indicates a Duplicate Return</td>
 <td style="text-align: left;">NCCS</td>
 <td style="text-align: left; min-width: 10cm;">NA</td>
 <td style="text-align: left; min-width: 5cm;">1989-2019</td>
@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Indicates a 501(c)(3) organization</td>
 <td style="text-align: left;">HD</td>
 <td style="text-align: left; min-width: 10cm;">F990-EZ-PART-00-SECTION-J; F990-PC-PART-00-SECTION-I</td>
-<td style="text-align: left; min-width: 5cm;">1989-1998; 2000-2015; 2017-2019</td>
+<td style="text-align: left; min-width: 5cm;">1993-1994; 1999-2004; 2008-2009; 2011-2015; 2017-2019; 1996; 2006</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
@@ -125,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Group exemption number</td>
 <td style="text-align: left;">HD</td>
 <td style="text-align: left; min-width: 10cm;">F990-EZ-PART-00-SECTION-F; F990-PC-PART-00-SECTION-HC</td>
-<td style="text-align: left; min-width: 5cm;">1989-1998; 2000-2012</td>
+<td style="text-align: left; min-width: 5cm;">1999-2004; 2011-2013; 1994; 1996; 2006; 2009</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
@@ -197,7 +197,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Return type</td>
 <td style="text-align: left;">HD</td>
 <td style="text-align: left; min-width: 10cm;">F990-PC-PART-00-LINE-00</td>
-<td style="text-align: left; min-width: 5cm;">2007-2013</td>
+<td style="text-align: left; min-width: 5cm;">2002-2013</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
@@ -213,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Tax period end date</td>
 <td style="text-align: left;">HD</td>
 <td style="text-align: left; min-width: 10cm;">F990-PC-PART-00-SECTION-A</td>
-<td style="text-align: left; min-width: 5cm;">1989-1998; 2000-2019</td>
+<td style="text-align: left; min-width: 5cm;">1989-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
@@ -225,43 +225,27 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">F9_01_EXP_BEN_PAID_MEMB_CY</td>
-<td style="text-align: left; min-width: 10cm;">Benefits paid to or for members</td>
-<td style="text-align: left;">PZ</td>
-<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-11; F990-PC-PART-01-LINE-14-CY</td>
-<td style="text-align: left; min-width: 5cm;">2013</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">F9_01_EXP_FEE_OTH_PAY_KONTR</td>
-<td style="text-align: left; min-width: 10cm;">Professional fees and other payments to independent contractors</td>
-<td style="text-align: left;">EZ</td>
-<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-13</td>
-<td style="text-align: left; min-width: 5cm;">2013</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">F9_01_EXP_FUNDR_TOT_CY</td>
 <td style="text-align: left; min-width: 10cm;">Total fundraising expense - CY</td>
 <td style="text-align: left;">PC</td>
 <td style="text-align: left; min-width: 10cm;">F990-PC-PART-01-LINE-16B</td>
-<td style="text-align: left; min-width: 5cm;">1989-2010</td>
+<td style="text-align: left; min-width: 5cm;">2000-2010</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">F9_01_EXP_OTH_CY</td>
-<td style="text-align: left; min-width: 10cm;">Other expenses -CY</td>
-<td style="text-align: left;">PZ</td>
-<td style="text-align: left; min-width: 10cm;">F990-PC-PART-01-LINE-17-CY</td>
-<td style="text-align: left; min-width: 5cm;">2013</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">F9_01_EXP_REV_LESS_EXP_CY</td>
 <td style="text-align: left; min-width: 10cm;">Excess or deficit</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-18; F990-PC-PART-01-LINE-19-CY</td>
 <td style="text-align: left; min-width: 5cm;">1997-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_01_EXP_TOT_CY</td>
+<td style="text-align: left; min-width: 10cm;">Total expenses - CY</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-17; F990-PC-PART-01-LINE-18-CY</td>
+<td style="text-align: left; min-width: 5cm;">1989-1999</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
@@ -273,14 +257,54 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">F9_01_REV_INVEST_TOT_CY</td>
+<td style="text-align: left; min-width: 10cm;">Investment income - current year</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-04; F990-PC-PART-01-LINE-10-CY</td>
+<td style="text-align: left; min-width: 5cm;">1989-1999</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_01_REV_OTH_CY</td>
+<td style="text-align: left; min-width: 10cm;">Other revenue - current year</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-01-LINE-11-CY</td>
+<td style="text-align: left; min-width: 5cm;">1991-1999</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F9_01_REV_PROG_TOT_CY</td>
+<td style="text-align: left; min-width: 10cm;">ProgramServiceRevenue</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-02; F990-PC-PART-01-LINE-09-CY</td>
+<td style="text-align: left; min-width: 5cm;">1991-1999</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F9_01_REV_TOT_CY</td>
+<td style="text-align: left; min-width: 10cm;">Total revenue - CY</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-09; F990-PC-PART-01-LINE-12-CY</td>
+<td style="text-align: left; min-width: 5cm;">1993-1999</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">F9_03_PROG_CODE</td>
 <td style="text-align: left; min-width: 10cm;">Activity2 - Activity code</td>
 <td style="text-align: left;">PC</td>
 <td style="text-align: left; min-width: 10cm;">F990-PC-PART-03-LINE-04-ABCD</td>
-<td style="text-align: left; min-width: 5cm;">1989-1998; 2000-2013; 2015-2017; 2019</td>
+<td style="text-align: left; min-width: 5cm;">1993-1994; 1999-2004; 2011-2014; 1996; 2006; 2009</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">F9_04_LOB_ACT_X</td>
+<td style="text-align: left; min-width: 10cm;">Lobbying activities?</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-06-LINE-47; F990-PC-PART-04-LINE-04</td>
+<td style="text-align: left; min-width: 5cm;">1989-1999</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">F9_05_501C12_GRO_INCOME_MEMB</td>
 <td style="text-align: left; min-width: 10cm;">Gross income from members</td>
 <td style="text-align: left;">PC</td>
@@ -288,7 +312,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 5cm;">1989-2012</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">F9_05_501C12_GRO_INCOME_OTH</td>
 <td style="text-align: left; min-width: 10cm;">Gross income, other sources</td>
 <td style="text-align: left;">PC</td>
@@ -296,7 +320,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 5cm;">1989-2012</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">F9_05_501C7_GRO_RCPT_PUB_USE</td>
 <td style="text-align: left; min-width: 10cm;">501(c)(7) orgs: Gross receipts, included on line 9, for public use of club facilities</td>
 <td style="text-align: left;">PZ</td>
@@ -304,7 +328,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 5cm;">1989-2013</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">F9_05_501C7_INITIATION_FEES</td>
 <td style="text-align: left; min-width: 10cm;">501(c)(7) orgs: Initiation fees and capital contributions included on line 9</td>
 <td style="text-align: left;">PZ</td>
@@ -312,36 +336,28 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 5cm;">1989-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">F9_05_NUM_EMPL</td>
 <td style="text-align: left; min-width: 10cm;">Number of employees</td>
 <td style="text-align: left;">PC</td>
 <td style="text-align: left; min-width: 10cm;">F990-PC-PART-05-LINE-02A</td>
-<td style="text-align: left; min-width: 5cm;">2008-2010; 2013</td>
+<td style="text-align: left; min-width: 5cm;">2009</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">F9_05_UBIZ_IMCOME_OVER_LIMIT_X</td>
 <td style="text-align: left; min-width: 10cm;">Unrelated business income?</td>
 <td style="text-align: left;">PZ; PC</td>
 <td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-35A; F990-PC-PART-05-LINE-03A</td>
-<td style="text-align: left; min-width: 5cm;">2000-2019</td>
+<td style="text-align: left; min-width: 5cm;">1989-2019</td>
 <td style="text-align: left;">character</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">F9_06_POLI_EXP</td>
 <td style="text-align: left; min-width: 10cm;">Direct or indirect political expenditures.</td>
 <td style="text-align: left;">EZ</td>
 <td style="text-align: left; min-width: 10cm;">F990-EZ-PART-05-LINE-37A</td>
 <td style="text-align: left; min-width: 5cm;">1989-2010</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">F9_08_REV_CONTR_GOVT_GRANT</td>
-<td style="text-align: left; min-width: 10cm;">Government grants (contributions)</td>
-<td style="text-align: left;">PC</td>
-<td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-01E</td>
-<td style="text-align: left; min-width: 5cm;">2010-2013</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
@@ -365,7 +381,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Other revenue - current year</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-08; F990-PC-PART-08-LINE-11E-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">1991-2019; 1989</td>
+<td style="text-align: left; min-width: 5cm;">2000-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
@@ -381,7 +397,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Special events net income (or loss) (F990-PC-PART-08-LINE-08C-09C-COL-A-COMBINED: F990-EZ-PART-01-LINE-06D)</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-06D</td>
-<td style="text-align: left; min-width: 5cm;">1991-2019; 1989</td>
+<td style="text-align: left; min-width: 5cm;">1991-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
@@ -413,7 +429,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Gross income from gaming activities</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-06A; F990-PC-PART-08-LINE-09A</td>
-<td style="text-align: left; min-width: 5cm;">1997-2019; 1989</td>
+<td style="text-align: left; min-width: 5cm;">1997-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
@@ -445,7 +461,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Invest income</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-04; F990-PC-PART-08-LINE-03-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">1989-2019</td>
+<td style="text-align: left; min-width: 5cm;">2000-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
@@ -525,7 +541,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Net Rental Income Or Loss - Total revenue</td>
 <td style="text-align: left;">PC</td>
 <td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-06D-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">1997-2012; 2014-2019</td>
+<td style="text-align: left; min-width: 5cm;">2000-2012; 2014-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
@@ -537,14 +553,22 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">F9_08_REV_OTH_SALE_ASSET</td>
+<td style="text-align: left; min-width: 10cm;">Gross amount from sale of assets other than inventory (F990-PC-PART-08-LINE-07A-COL-i-ii-COMBINED: F990-EZ-PART-01-LINE-05A)</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-05A</td>
+<td style="text-align: left; min-width: 5cm;">1997-1999</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">F9_08_REV_OTH_SALE_ASSET_OTH</td>
 <td style="text-align: left; min-width: 10cm;">Gross Amount Sales Assets - Other amount</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-07A-COL-ii</td>
-<td style="text-align: left; min-width: 5cm;">1997-2019</td>
+<td style="text-align: left; min-width: 5cm;">2000-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">F9_08_REV_OTH_SALE_ASSET_SEC</td>
 <td style="text-align: left; min-width: 10cm;">Securities amount</td>
 <td style="text-align: left;">PC; PZ</td>
@@ -552,23 +576,23 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 5cm;">1989-2012</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">F9_08_REV_OTH_SALE_GAIN_NET_TOT</td>
 <td style="text-align: left; min-width: 10cm;">Gain or (loss) from sale of assets other than inventory</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-05C; F990-PC-PART-08-LINE-07D-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">2011-2019</td>
+<td style="text-align: left; min-width: 5cm;">1997-1999; 2011-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">F9_08_REV_OTH_SALE_GAIN_OTH</td>
 <td style="text-align: left; min-width: 10cm;">Gain Or Loss - Other amount</td>
 <td style="text-align: left;">PC</td>
 <td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-07C-COL-ii</td>
-<td style="text-align: left; min-width: 5cm;">1997-2019</td>
+<td style="text-align: left; min-width: 5cm;">2000-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">F9_08_REV_OTH_SALE_GAIN_SEC</td>
 <td style="text-align: left; min-width: 10cm;">Securities amount</td>
 <td style="text-align: left;">PC</td>
@@ -576,12 +600,20 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 5cm;">1997-2012; 2014-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
+<tr class="even">
+<td style="text-align: left;">F9_08_REV_OTH_SALE_LESS_COST</td>
+<td style="text-align: left; min-width: 10cm;">Cost or other basis and sales expenses (F990-PC-PART-08-LINE-07B-COL-i-ii-COMBINED: F990-EZ-PART-01-LINE-05B)</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-05B</td>
+<td style="text-align: left; min-width: 5cm;">1989-1999</td>
+<td style="text-align: left;">integer</td>
+</tr>
 <tr class="odd">
 <td style="text-align: left;">F9_08_REV_OTH_SALE_LESS_COST_OTH</td>
 <td style="text-align: left; min-width: 10cm;">Less Cost Oth Basis Sales Expenses - Other amount</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-07B-COL-ii</td>
-<td style="text-align: left; min-width: 5cm;">1997-2019</td>
+<td style="text-align: left; min-width: 5cm;">2000-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
@@ -597,7 +629,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Program service revenue total</td>
 <td style="text-align: left;">PC</td>
 <td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-02G-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">1989-2019</td>
+<td style="text-align: left; min-width: 5cm;">2000-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
@@ -605,7 +637,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Total Revenue - Total revenue</td>
 <td style="text-align: left;">PC</td>
 <td style="text-align: left; min-width: 10cm;">F990-PC-PART-08-LINE-12-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">1989-2019</td>
+<td style="text-align: left; min-width: 5cm;">2000-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
@@ -617,59 +649,11 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">F9_09_EXP_DEPREC_TOT</td>
-<td style="text-align: left; min-width: 10cm;">Depreciation, depletion, and amortization</td>
-<td style="text-align: left;">PC</td>
-<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-22-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">2010; 2013</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">F9_09_EXP_FEE_SVC_FUNDR_TOT</td>
 <td style="text-align: left; min-width: 10cm;">Fees for Professional Fundraising Services - Total Expense</td>
 <td style="text-align: left;">PC</td>
 <td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-11E-COL-A</td>
 <td style="text-align: left; min-width: 5cm;">1989-2012; 2014-2019</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">F9_09_EXP_GRANT_US_INDIV_TOT</td>
-<td style="text-align: left; min-width: 10cm;">Grants To Domestic Individuals - Total</td>
-<td style="text-align: left;">PC</td>
-<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-02-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">2013</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">F9_09_EXP_GRANT_US_ORG_TOT</td>
-<td style="text-align: left; min-width: 10cm;">Grants To Domestic Orgs - Total</td>
-<td style="text-align: left;">PZ</td>
-<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-01-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">2010; 2013</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">F9_09_EXP_INT_TOT</td>
-<td style="text-align: left; min-width: 10cm;">Interest - Total</td>
-<td style="text-align: left;">PC</td>
-<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-20-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">2010; 2013</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">F9_09_EXP_OCCUPANCY_TOT</td>
-<td style="text-align: left; min-width: 10cm;">Occupancy; rent; utilities; and maintenance</td>
-<td style="text-align: left;">PZ</td>
-<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-01-LINE-14; F990-PC-PART-09-LINE-16-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">2010; 2013</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">F9_09_EXP_OTH_EMPL_BEN_TOT</td>
-<td style="text-align: left; min-width: 10cm;">Other Employee Benefits - Total</td>
-<td style="text-align: left;">PC</td>
-<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-09-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">2010; 2013</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
@@ -689,35 +673,19 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">F9_09_EXP_PAY_AFFIL_TOT</td>
-<td style="text-align: left; min-width: 10cm;">Payments To Affiliates - Total</td>
+<td style="text-align: left;">F9_09_EXP_TOT_FUNDR</td>
+<td style="text-align: left; min-width: 10cm;">Total Functional Expenses - Fundraising</td>
 <td style="text-align: left;">PC</td>
-<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-21-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">2001-2003; 2010; 2013</td>
+<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-25-COL-D</td>
+<td style="text-align: left; min-width: 5cm;">1989-1999</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">F9_09_EXP_PENSION_CONTR_TOT</td>
-<td style="text-align: left; min-width: 10cm;">Pension Plan Contributions - Total</td>
-<td style="text-align: left;">PC</td>
-<td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-08-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">2010; 2013</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">F9_09_EXP_TOT_TOT</td>
 <td style="text-align: left; min-width: 10cm;">Total Functional Expenses - Total</td>
 <td style="text-align: left;">PC</td>
 <td style="text-align: left; min-width: 10cm;">F990-PC-PART-09-LINE-25-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">1989-2019</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">F9_10_ASSET_CASH_EOY</td>
-<td style="text-align: left; min-width: 10cm;">Cash, non-interest-bearing, end of year</td>
-<td style="text-align: left;">PZ</td>
-<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-01-EOY</td>
-<td style="text-align: left; min-width: 5cm;">2001; 2010; 2013</td>
+<td style="text-align: left; min-width: 5cm;">2000-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
@@ -725,7 +693,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Ending of year</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-11-EOY</td>
-<td style="text-align: left; min-width: 5cm;">1997; 2001; 2010; 2013</td>
+<td style="text-align: left; min-width: 5cm;">2000-2010</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
@@ -733,39 +701,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Ending of year</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-12-EOY</td>
-<td style="text-align: left; min-width: 5cm;">1997; 2001; 2010; 2013</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">F9_10_ASSET_LAND_BLDG</td>
-<td style="text-align: left; min-width: 10cm;">Land; buildings; and equipment basis</td>
-<td style="text-align: left;">PC; PZ</td>
-<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-10A</td>
-<td style="text-align: left; min-width: 5cm;">2001-2003</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">F9_10_ASSET_LAND_BLDG_NET_BOY</td>
-<td style="text-align: left; min-width: 10cm;">Net value including lands; buildings; and equipment; beginning of year</td>
-<td style="text-align: left;">PZ</td>
-<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-02-LINE-23-BOY; F990-PC-PART-10-LINE-10C-BOY</td>
-<td style="text-align: left; min-width: 5cm;">2001-2003; 2010</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">F9_10_ASSET_LAND_BLDG_NET_EOY</td>
-<td style="text-align: left; min-width: 10cm;">Net value including lands; buildings; and equipment; end of year</td>
-<td style="text-align: left;">PZ</td>
-<td style="text-align: left; min-width: 10cm;">F990-EZ-PART-02-LINE-23-EOY; F990-PC-PART-10-LINE-10C-EOY</td>
-<td style="text-align: left; min-width: 5cm;">2001-2003; 2010; 2013</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">F9_10_ASSET_OTH_EOY</td>
-<td style="text-align: left; min-width: 10cm;">Ending of year</td>
-<td style="text-align: left;">PZ</td>
-<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-15-EOY</td>
-<td style="text-align: left; min-width: 5cm;">2001; 2010; 2013</td>
+<td style="text-align: left; min-width: 5cm;">2000-2010</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
@@ -845,7 +781,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Beginnning of year</td>
 <td style="text-align: left;">PC</td>
 <td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-32-BOY</td>
-<td style="text-align: left; min-width: 5cm;">1997-2010</td>
+<td style="text-align: left; min-width: 5cm;">2000-2010</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
@@ -857,22 +793,6 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">F9_10_NAFB_RESTRICT_PERM_EOY</td>
-<td style="text-align: left; min-width: 10cm;">Ending of year</td>
-<td style="text-align: left;">PC</td>
-<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-29-EOY</td>
-<td style="text-align: left; min-width: 5cm;">2001-2003</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">F9_10_NAFB_RESTRICT_TEMP_EOY</td>
-<td style="text-align: left; min-width: 10cm;">Ending of year</td>
-<td style="text-align: left;">PC</td>
-<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-28-EOY</td>
-<td style="text-align: left; min-width: 5cm;">2001-2003</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">F9_10_NAFB_TOT_BOY</td>
 <td style="text-align: left; min-width: 10cm;">Net assets or fund balances, beginning of year</td>
 <td style="text-align: left;">PZ</td>
@@ -881,14 +801,6 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">F9_10_NAFB_UNRESTRICT_EOY</td>
-<td style="text-align: left; min-width: 10cm;">Ending of year</td>
-<td style="text-align: left;">PC</td>
-<td style="text-align: left; min-width: 10cm;">F990-PC-PART-10-LINE-27-EOY</td>
-<td style="text-align: left; min-width: 5cm;">2001-2003</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">F9_11_RECO_OTH_CHANGE_NAFB</td>
 <td style="text-align: left; min-width: 10cm;">Other changes in net assets</td>
 <td style="text-align: left;">PZ</td>
@@ -896,28 +808,20 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 5cm;">1997-2010</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">SA_02_PUB_GIFT_GRANT_CONTR_CY</td>
 <td style="text-align: left; min-width: 10cm;">Current tax year</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-A-LINE-01-COL-E</td>
-<td style="text-align: left; min-width: 5cm;">1997-2010</td>
+<td style="text-align: left; min-width: 5cm;">2000-2010</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">SA_02_PUB_GIFT_GRANT_CONTR_TOT</td>
 <td style="text-align: left; min-width: 10cm;">Gifts Grants Contri Rcvd170 Grp - Total</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-A-LINE-01-COL-F</td>
 <td style="text-align: left; min-width: 5cm;">2011-2013; 2019</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">SA_02_PUB_SUPPORT_TOT</td>
-<td style="text-align: left; min-width: 10cm;">Public Support Total</td>
-<td style="text-align: left;">PZ</td>
-<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-A-LINE-06-COL-F</td>
-<td style="text-align: left; min-width: 5cm;">2010-2013; 2006</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
@@ -933,7 +837,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Govt Furn Srvc Fclts Vl170 Grp - Total</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-A-LINE-03-COL-F</td>
-<td style="text-align: left; min-width: 5cm;">1997-2019</td>
+<td style="text-align: left; min-width: 5cm;">2000-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
@@ -941,7 +845,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Gross receipts from admissions; merchandise sold or services performed; or furnishing of facilities in any activity that is related to the organization's tax-exempt purpose</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-B-LINE-12</td>
-<td style="text-align: left; min-width: 5cm;">1997-2013; 2019</td>
+<td style="text-align: left; min-width: 5cm;">2000-2013; 2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
@@ -953,11 +857,27 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">SA_02_TOT_INCOME_OTH_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Other Income - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-B-LINE-10-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">1997-1999</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SA_02_TOT_SUPPORT_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Form990 Schedule APart II - Total support</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-02-SECTION-B-LINE-11-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">1997-1999</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">SA_03_PUB_GIFT_GRANT_CONTR_TOT</td>
 <td style="text-align: left; min-width: 10cm;">Gifts Grants Contrib Received - Total</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-A-LINE-01-COL-F</td>
-<td style="text-align: left; min-width: 5cm;">1997-2019</td>
+<td style="text-align: left; min-width: 5cm;">2000-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
@@ -969,6 +889,14 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">SA_03_PUB_GRO_RCPT_NONUBIZ_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Gross Receipts From Non UBI - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-A-LINE-03-COL-F</td>
+<td style="text-align: left; min-width: 5cm;">1997-1999</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">SA_03_PUB_TAXREV_LEVIED_TOT</td>
 <td style="text-align: left; min-width: 10cm;">Tax Rev Levied For Org Benefit509 - Total</td>
 <td style="text-align: left;">PZ</td>
@@ -976,7 +904,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 5cm;">2011-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">SA_03_PUB_VALUE_SVC_GOVT_TOT</td>
 <td style="text-align: left; min-width: 10cm;">Govt Furn Srvc Fclts Vl509 Grp - Total</td>
 <td style="text-align: left;">PZ</td>
@@ -984,7 +912,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 5cm;">2011-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">SA_03_TOT_ADD_L10AB_TOT</td>
 <td style="text-align: left; min-width: 10cm;">Investment Income And UBTI - Total</td>
 <td style="text-align: left;">PZ</td>
@@ -992,23 +920,39 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 5cm;">2011-2019</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">SA_03_TOT_INCOME_GRO_TOT</td>
 <td style="text-align: left; min-width: 10cm;">Gross Investment Income - Total</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-B-LINE-10A-COL-F</td>
-<td style="text-align: left; min-width: 5cm;">1997-2010</td>
+<td style="text-align: left; min-width: 5cm;">2000-2010</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">SA_03_TOT_SUPPORT_TOT</td>
 <td style="text-align: left; min-width: 10cm;">Total Support Calendar Year Grp - Total</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">SCHED-A-PART-03-SECTION-B-LINE-13-COL-F</td>
-<td style="text-align: left; min-width: 5cm;">1997-2019</td>
+<td style="text-align: left; min-width: 5cm;">2000-2019</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SC_02_AVE_EXP_GRASS_LOB_TOT</td>
+<td style="text-align: left; min-width: 10cm;">Grassroots Lobbying Expenditures - Total</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-C-PART-02-A-LINE-02F-COL-E</td>
+<td style="text-align: left; min-width: 5cm;">1989-1999</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">SC_02_AVE_EXP_GRASS_NONTAX_CY</td>
+<td style="text-align: left; min-width: 10cm;">Grassroots Nontaxable Amount2 - Current year</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-C-PART-02-A-LINE-02D-COL-D</td>
+<td style="text-align: left; min-width: 5cm;">1997-1999</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">SC_02_EXP_DIRECT_LOB_FILEORG</td>
 <td style="text-align: left; min-width: 10cm;">Total Direct Lobbying Expenditures - Filing Organization's Totals</td>
 <td style="text-align: left;">PZ</td>
@@ -1016,15 +960,15 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 5cm;">1989-2010</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">SC_02_EXP_GRASS_LOB_FILEORG</td>
 <td style="text-align: left; min-width: 10cm;">Total Grassroots Lobbying Expenditures - Filing Organization's Totals</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">SCHED-C-PART-02-A-LINE-01A-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">1989-2010</td>
+<td style="text-align: left; min-width: 5cm;">2000-2010</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">SC_02_EXP_GRASS_M_NONTAX_FILEORG</td>
 <td style="text-align: left; min-width: 10cm;">Total Grassroot Lobbying Minus Nontaxable - Filing Organization's Totals</td>
 <td style="text-align: left;">PZ</td>
@@ -1032,12 +976,20 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 5cm;">1989-2010</td>
 <td style="text-align: left;">integer</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">SC_02_EXP_GRASS_NONTAX_FILEORG</td>
 <td style="text-align: left; min-width: 10cm;">Grassroots Nontaxable Amount - Filing Organization's Totals</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">SCHED-C-PART-02-A-LINE-01G-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">1997-2010</td>
+<td style="text-align: left; min-width: 5cm;">2000-2010</td>
+<td style="text-align: left;">integer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SC_02_EXP_LOB_M_NONTAX_AFFGROUP</td>
+<td style="text-align: left; min-width: 10cm;">Total Lobbying Minus Nontaxable - Affiliated Group Totals</td>
+<td style="text-align: left;">PZ</td>
+<td style="text-align: left; min-width: 10cm;">SCHED-C-PART-02-A-LINE-01I-COL-B</td>
+<td style="text-align: left; min-width: 5cm;">1989-1999</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
@@ -1045,7 +997,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Total Lobbying Minus Nontaxable - Filing Organization's Totals</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">SCHED-C-PART-02-A-LINE-01I-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">1989-2010</td>
+<td style="text-align: left; min-width: 5cm;">2000-2010</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
@@ -1069,7 +1021,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Total lobbying expenditures - Filing organization's totals</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">SCHED-C-PART-02-A-LINE-01C-COL-A</td>
-<td style="text-align: left; min-width: 5cm;">1999-2010</td>
+<td style="text-align: left; min-width: 5cm;">2006-2010</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="odd">
@@ -1077,18 +1029,10 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left; min-width: 10cm;">Direct contact with legislators; their staffs; government officials; or a legislative body (only for section 501(c)(3))(Amount)</td>
 <td style="text-align: left;">PZ</td>
 <td style="text-align: left; min-width: 10cm;">SCHED-C-PART-02-B-LINE-01G-COL-B</td>
-<td style="text-align: left; min-width: 5cm;">1989-2010</td>
+<td style="text-align: left; min-width: 5cm;">2000-2010</td>
 <td style="text-align: left;">integer</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">SJ_02_COMP_DTK_OTH_ORG</td>
-<td style="text-align: left; min-width: 10cm;">Other compensation ($) from filing organization</td>
-<td style="text-align: left;">PC</td>
-<td style="text-align: left; min-width: 10cm;">SCHED-J-PART-02-COL-B(iii)-LINE-(i)</td>
-<td style="text-align: left; min-width: 5cm;">2013</td>
-<td style="text-align: left;">integer</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">SR_02_RLTD_ORG_PCSTAT</td>
 <td style="text-align: left; min-width: 10cm;">Public charity status (if 501(c)(3))</td>
 <td style="text-align: left;">PC</td>

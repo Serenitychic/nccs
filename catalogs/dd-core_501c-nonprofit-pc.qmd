@@ -1,5 +1,5 @@
 ---
-title: "501C3-CHARITIES-PZ Data Dictionary"
+title: "501CE-NONPROFIT-PC Data Dictionary"
 format: html
 editor: visual
 execute: 
@@ -14,7 +14,10 @@ library(kableExtra)
 dd <- readr::read_csv("https://raw.githubusercontent.com/UrbanInstitute/nccstools/main/crosswalks/ds-core/CORE-HRMN-DD.csv?token=GHSAT0AAAAAACGVREUY234CDVH7JBYWKD6AZOBJF6Q")
 ```
 
-The PZ Version of the harmonized 501(c)(3) Charities data set contains variables common across both Form 990 and Form 990EZ filings. This data set includes a larger number of organizations but a smaller number of variables than the 501(c)(3) Charities PC data set.
+The PC Version of the harmonized 501(c) Nonprofit data set contains variables
+only found in the Form 990 for all other 501(c) organizations. This data set 
+includes a smaller number of organizations but larger number of variables than 
+the 501(c) Nonprofit PZ data set.
 
 ## Data Dictionary
 
@@ -30,12 +33,12 @@ both <- data.frame(
                             "5 Digit Zip Code" ),
   variable_source = rep( "NCCS", 4 ),
   form_location = rep( NA, 4 ),
-  variable_coverage = rep( "1989-2019", 4 ),
+  variable_coverage = rep( "2012-2019", 4 ),
   variable_datatype = rep( "character", 4 )
 )
 
 dd <- dd %>%
-  dplyr::filter( form_scope == "501C3-CHARITIES-PZ" ) %>% 
+  dplyr::filter( form_scope == "501CE-NONPROFIT-PC" ) %>% 
   dplyr::select(  
     variable_name,
     variable_description,
@@ -59,3 +62,4 @@ dd_combined %>%
   column_spec( column = c( 2, 4), width_min = "10cm" ) %>% 
   column_spec( column = 5, width_min = "5cm" )
 ```
+
