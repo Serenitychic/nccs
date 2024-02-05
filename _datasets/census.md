@@ -9,6 +9,7 @@ categories:
 featured: true
 featuredOrder: 4
 primaryCtaUrl: "https://urbaninstitute.github.io/nccs/catalogs/catalog-census_crosswalk.html"
+primaryCtaText: Data Catalog
 primaryCtaCaption:
 primaryLinks:
   - text: "Replication Code"

@@ -9,6 +9,7 @@ categories:
 featured: false
 featuredOrder: 10
 primaryCtaUrl: "https://nccsdata.s3.us-east-1.amazonaws.com/public/pub78/2023-10-CURRENT-EXEMPT-ORGS-DATABASE.csv"
+primaryCtaText: Data Catalog
 primaryCtaCaption: "File size: 120MB"
 primaryLinks:
   - text: "Data Dictionary"

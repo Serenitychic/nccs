@@ -9,6 +9,7 @@ categories:
 featured: false
 # featuredOrder: 1
 primaryCtaUrl: "../../catalogs/catalog-efile.html"
+primaryCtaText: Data Catalog
 primaryCtaCaption:
 primaryLinks:
   - text: "R Package"

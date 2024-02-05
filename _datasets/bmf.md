@@ -9,6 +9,7 @@ categories:
 featured: true
 featuredOrder: 2
 primaryCtaUrl: "../../catalogs/catalog-bmf.html"
+primaryCtaText: Data Catalog
 primaryLinks:
   - text: "R Package"
     href: "https://urbaninstitute.github.io/nccsdata/"

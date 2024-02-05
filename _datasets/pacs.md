@@ -3,6 +3,7 @@ title: 527 Political Action Committees
 date: 2023-05-30 12:00:00
 description: Electronic filings made by 527 organizations. 
 primaryCtaUrl: "../../catalogs/catalog-pacs.html"
+primaryCtaText: Data Catalog
 primaryCtaCaption: "Includes data dictionaries"
 primaryLinks:
   - text: "GitHub Repository"

@@ -8,6 +8,7 @@ categories:
   - orgs
 featured: false
 primaryCtaUrl: "https://nccsdata.s3.us-east-1.amazonaws.com/raw/e-postcard/2023-09-E-POSTCARD.csv"
+primaryCtaText: Data Catalog
 primaryCtaCaption: "File size: 330MB"
 primaryLinks:
   - text: "GitHub Repository"

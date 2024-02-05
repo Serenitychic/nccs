@@ -6,6 +6,7 @@ categories:
   - revocations
 featured: false
 primaryCtaUrl: "https://urbaninstitute.github.io/nccs/catalogs/catalog-revocations.html"
+primaryCtaText: Data Catalog
 primaryCtaCaption:
 primaryLinks:
   - text: "IRS Revocations Site"

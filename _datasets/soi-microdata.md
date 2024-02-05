@@ -10,6 +10,7 @@ featured: true
 featuredOrder: 5
 primaryCtaUrl: "../../catalogs/catalog-soi-microdata.html"
 primaryCtaCaption: "Years Available: 1990-2019"
+primaryCtaText: Data Catalog
 author:
 - id: jlecy
 citation: 
