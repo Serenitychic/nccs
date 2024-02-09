@@ -21,6 +21,7 @@ GH.RAW <- "https://raw.githubusercontent.com/UrbanInstitute/nccs/main/catalogs/"
 d <- read.csv( "catalogs/AWS-NCCSDATA.csv" )
 source( "catalogs/build-catalog-functions.R" )
 ```
+
 <br>
 
 <hr>
@@ -53,6 +54,10 @@ Note that PZ datasets include a large number of organizations but a smaller numb
 
 Files are organized by **tax year**, not calendar year, filing year, or accounting year. See the Research Handbook for details on the differences.
 
+**Data Dictionaries**
+
+The updated data dictionaries were built using the Nonprofit Open Data Collective's [Master Concordance File](https://github.com/Nonprofit-Open-Data-Collective/irs-efile-master-concordance-file).
+
 <br>
 
 <hr>
@@ -63,15 +68,11 @@ Files are organized by **tax year**, not calendar year, filing year, or accounti
 
 The PZ Version of the harmonized 501(c)(3) Charities data set contains variables common across both Form 990 and Form 990EZ filings. This data set includes a larger number of organizations but a smaller number of variables than the 501(c)(3) Charities PC data set.
 
+[Link to Data Dictionary](../../nccs/catalogs/dd-core_501c3-charities-pz.html)
+
 ```{r}
 #| echo: false
 #| output: asis
-
-profile_buttons <- make_buttons( 
-  url = "../../nccs/catalogs/dd-core_501c3-charities-pz.html",
-  button = "profile"
-)
- 
 catalog <- construct_catalog(
   s3_catalog = d,
   series = "core-harmonized",
@@ -79,9 +80,6 @@ catalog <- construct_catalog(
   tscope = "CHARITIES",
   fscope = "PZ",
   np_type = "501C3-CHARITIES"
-) %>% tibble::add_column(
-  profile_buttons,
-  .after = "download_buttons"
 )
 
 
@@ -89,7 +87,6 @@ catalog <- construct_catalog(
 catalog %>%
   knitr::kable( escape=FALSE,
                 col.names = c("Download Link",
-                              "Data Dictionary",
                               "Size",
                               "Year",
                               "Nonprofit Type",
@@ -101,15 +98,12 @@ catalog %>%
 
 The PC Version of the harmonized 501(c)(3) Charities data set contains variables only found in the Form 990. This data set includes a smaller number of organizations but larger number of variables than the 501(c)(3) Charities PZ data set.
 
+[Link to Data Dictionary](../../nccs/catalogs/dd-core_501c3-charities-pc.html)
+
 ```{r}
 #| echo: false
 #| output: asis
- 
-profile_buttons <- make_buttons( 
-  url = "../../nccs/catalogs/dd-core_501c3-charities-pc.html",
-  button = "profile"
-)
- 
+
 catalog <- construct_catalog(
   s3_catalog = d,
   series = "core-harmonized",
@@ -117,17 +111,11 @@ catalog <- construct_catalog(
   tscope = "CHARITIES",
   fscope = "PC",
   np_type = "501C3-CHARITIES"
-) %>% tibble::add_column(
-  profile_buttons,
-  .after = "download_buttons"
 )
-
-
 
 catalog %>%
   knitr::kable( escape=FALSE,
                 col.names = c("Download Link",
-                              "Data Dictionary",
                               "Size",
                               "Year",
                               "Nonprofit Type",
@@ -139,15 +127,12 @@ catalog %>%
 
 The PZ Version of the harmonized 501(c) Nonprofits data set contains variables common across both Form 990 and Form 990EZ filings for all other 501(c) organizations. This data set includes a larger number of organizations but a smaller number of variables than the 501(c) Nonprofit PC data set.
 
+[Link to Data Dictionary](../../nccs/catalogs/dd-core_501c-nonprofit-pz.html)
+
 ```{r}
 #| echo: false
 #| output: asis
- 
-profile_buttons <- make_buttons( 
-  url = "../../nccs/catalogs/dd-core_501c-nonprofit-pz.html",
-  button = "profile"
-)
- 
+#| 
 catalog <- construct_catalog(
   s3_catalog = d,
   series = "core-harmonized",
@@ -155,17 +140,11 @@ catalog <- construct_catalog(
   tscope = "NONPROFIT",
   fscope = "PZ",
   np_type = "501CE-NONPROFIT"
-) %>% tibble::add_column(
-  profile_buttons,
-  .after = "download_buttons"
 )
-
-
 
 catalog %>%
   knitr::kable( escape=FALSE,
                 col.names = c("Download Link",
-                              "Data Dictionary",
                               "Size",
                               "Year",
                               "Nonprofit Type",
@@ -177,15 +156,12 @@ catalog %>%
 
 The PC Version of the harmonized 501(c) Nonprofit data set contains variables only found in the Form 990 for all other 501(c) organizations. This data set includes a smaller number of organizations but larger number of variables than the 501(c) Nonprofit PZ data set.
 
+[Link to Data Dictionary](../../nccs/catalogs/dd-core_501c-nonprofit-pc.html)
+
 ```{r}
 #| echo: false
 #| output: asis
- 
-profile_buttons <- make_buttons( 
-  url = "../../nccs/catalogs/dd-core_501c-nonprofit-pc.html",
-  button = "profile"
-)
- 
+
 catalog <- construct_catalog(
   s3_catalog = d,
   series = "core-harmonized",
@@ -193,17 +169,11 @@ catalog <- construct_catalog(
   tscope = "NONPROFIT",
   fscope = "PC",
   np_type = "501CE-NONPROFIT"
-) %>% tibble::add_column(
-  profile_buttons,
-  .after = "download_buttons"
 )
-
-
 
 catalog %>%
   knitr::kable( escape=FALSE,
                 col.names = c("Download Link",
-                              "Data Dictionary",
                               "Size",
                               "Year",
                               "Nonprofit Type",

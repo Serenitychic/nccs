@@ -11,10 +11,42 @@ execute:
 library(dplyr)
 library(kableExtra)
 
-dd <- readr::read_csv("https://raw.githubusercontent.com/UrbanInstitute/nccstools/main/crosswalks/ds-core/CORE-HRMN-DD.csv?token=GHSAT0AAAAAACGVREUY234CDVH7JBYWKD6AZOBJF6Q")
+dd <- readr::read_csv( 
+  "https://nccsdata.s3.amazonaws.com/harmonized/CORE-HRMN-DD.csv"
+  )
 ```
 
 The PZ Version of the harmonized 501(c)(3) Charities data set contains variables common across both Form 990 and Form 990EZ filings. This data set includes a larger number of organizations but a smaller number of variables than the 501(c)(3) Charities PC data set.
+
+## Data Dictionary Overview
+
+This data dictionary was built using the Nonprofit Open Data Collective's [Master Concordance File](https://github.com/Nonprofit-Open-Data-Collective/irs-efile-master-concordance-file).
+
+## Variable Descriptions
+
+
+-   **Variable Name** : Name of variable
+
+-   **Description**: Description of variable
+
+-   **Variable Source**: Source of variable
+
+    -   **NCCS**: Variable created by NCCS
+
+    -   **HD**: 990 Header
+
+    -   **PC**: Form 990 Only
+
+    -   **PZ**: Both Form 990 and Form 990EZ
+
+    -   **EZ**: Form 990EZ
+
+-   **Location Code**: Location in IRS Form
+
+-   **Coverage**: Tax years for which variable is available
+
+-   **Data Type**: Data type of variable
+
 
 ## Data Dictionary
 

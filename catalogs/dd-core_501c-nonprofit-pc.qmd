@@ -11,13 +11,37 @@ execute:
 library(dplyr)
 library(kableExtra)
 
-dd <- readr::read_csv("https://raw.githubusercontent.com/UrbanInstitute/nccstools/main/crosswalks/ds-core/CORE-HRMN-DD.csv?token=GHSAT0AAAAAACGVREUY234CDVH7JBYWKD6AZOBJF6Q")
+dd <- readr::read_csv( 
+  "https://nccsdata.s3.amazonaws.com/harmonized/CORE-HRMN-DD.csv"
+  )
 ```
 
-The PC Version of the harmonized 501(c) Nonprofit data set contains variables
-only found in the Form 990 for all other 501(c) organizations. This data set 
-includes a smaller number of organizations but larger number of variables than 
-the 501(c) Nonprofit PZ data set.
+The PC Version of the harmonized 501(c) Nonprofit data set contains variables only found in the Form 990 for all other 501(c) organizations. This data set includes a smaller number of organizations but larger number of variables than the 501(c) Nonprofit PZ data set.
+
+## Variable Descriptions
+
+
+-   **Variable Name** : Name of variable
+
+-   **Description**: Description of variable
+
+-   **Variable Source**: Source of variable
+
+    -   **NCCS**: Variable created by NCCS
+
+    -   **HD**: 990 Header
+
+    -   **PC**: Form 990 Only
+
+    -   **PZ**: Both Form 990 and Form 990EZ
+
+    -   **EZ**: Form 990EZ
+
+-   **Location Code**: Location in IRS Form
+
+-   **Coverage**: Tax years for which variable is available
+
+-   **Data Type**: Data type of variable
 
 ## Data Dictionary
 
@@ -62,4 +86,3 @@ dd_combined %>%
   column_spec( column = c( 2, 4), width_min = "10cm" ) %>% 
   column_spec( column = 5, width_min = "5cm" )
 ```
-
