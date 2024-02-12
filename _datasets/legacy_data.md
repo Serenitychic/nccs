@@ -21,8 +21,12 @@ citation:
 
 ## Overview
 
-This site provides access to NCCS' Legacy Data Archives, containing original
-versions of the Core, BMF and SOI data series without harmonization.
+This site provides access to NCCS' Legacy Data Archives, containing the original
+version of the NCCS Core Series.
+
+***These data sets are no longer being maintained and will be superseded on 31.06.2024 by their respective harmonized versions***
+
+* [Harmonized Core Series](../core/)
 
 ## Core Data Series
 

@@ -1,5 +1,5 @@
 ---
-title: NCCS Core Series
+title: NCCS Core Series (Harmonized)
 date: 2024-02-01
 description: A comprehensive panel of nonprofit organizations that file IRS form 990
 categories:
@@ -30,12 +30,13 @@ The NCCS Core Data Series is derived from nonprofits’ annual Form 990 filings 
 * **Geographic information**: the location and service areas of nonprofits  
 * **Time series data**: offer data from 1989 onward, which makes it possible to track trends in the nonprofit sector
 
-The latest version of the Core Data Series has been updated with the following features:
+The harmonized version of the Core Data Series has been updated with the following features:
 
 * Standardized variable names and data types across all data sets
 * Updated data dictionaries that cover all data sets
 * A new ID column (**RTRN_ID**) that maps each row to a unique filing ID
 * A column (**DUP_RTRN_X**) that indicates the presence of multiple filings by the same EIN
+* A column (**TAX_YEAR**) that indicates the tax year for each filing
 
 This makes it easier for users to construct panel data sets. A description of these 
 variables is provided in the accompanying data dictionaries.
@@ -59,6 +60,8 @@ of population and scope distinctions creates 4 separate data sets:
 * 501C3-CHARITIES-PC: Contains variables found only in 990 filings for 501(c)(3) organizations
 * 501CE-NONPROFIT-PZ: Contains variables found in both 990 and 990EZ filings for all other 501(c) organizations
 * 501CE-NONPROFIT-PC: Contains variables found only in 990 filings for all other 501(c) organizations
+
+Data for private foundations is undergoing harmonization and will be released at a later date. 
 
 ## Use
 
@@ -97,7 +100,7 @@ The Core Data Series contains two types of form scope:
 
 The data sets in the catalog have the following naming conventions:
 
-***Data Series-Tax Year-Types of Organizations-Scope of Filing***
+![image](http://127.0.0.1:4000/nccs/public/img/nccs-core-harmonized-naming-conventions.jpg)
 
 For example, CORE-2015-501C3-CHARITIES-PC.csv contains variables from Form 990 filings (**PC**) for 501(c)(3) organizations (**501C3-CHARITIES**) in tax year 2015.
 
@@ -105,7 +108,7 @@ For example, CORE-2015-501C3-CHARITIES-PC.csv contains variables from Form 990 f
 
 **Form Scope PC**: Datasets with form scope of PC will contain the smaller subset of full 990 form filers but contain a larger number of variables. 
 
-The PZ and PF versions of the data series are available from 1989-2022. The PC version is a more recent edition, available from 2012-2022.
+The PZ version of the data series is available for tax years 1989-2019. The PC version is available for tax years 2012-2019.
 
 See the [Data Guide](https://nccs-data.urban.org/NCCS-data-guide.pdf) for more details. 
 
